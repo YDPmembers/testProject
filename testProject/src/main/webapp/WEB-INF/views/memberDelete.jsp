@@ -1,12 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>회원 삭제</title>
-</head>
-<body>
+
+<jsp:include page="./include/header.jsp">
+
 	<h1>회원 삭제</h1>
 	
 	<form action="delete" method="post">
@@ -16,5 +12,5 @@
 	</form>
 	
 	<a href="list">회원 목록으로 돌아가기</a>
-</body>
-</html>
+
+<jsp:include page="./include/footer.jsp">
