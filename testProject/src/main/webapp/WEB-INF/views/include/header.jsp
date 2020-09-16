@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
+    pageEncoding="UTF-8"%> 
+<%@ page import="com.hk.member.vo.MemberVO" %>
+
 <!DOCTYPE html>
 <head>
  <meta charset="utf-8">
@@ -21,6 +21,19 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
+<div>
+ <%
+ MemberVO loginMember = new MemberVO();
+ if (loginMember != null) {%>
+   <span style="float: right;"> 
+   ${loginMember.mname } 
+   <a style="color: white;" href="/auth/logout">로그아웃</a>
+   </span>
+   <% } else {%>
+   <span style="float: right;"> <a style="color: white;"
+      href="/auth/login">로그인</a>
+   </span>
+   <% } %>
+</div>
 </head>
 <body>
