@@ -1,4 +1,3 @@
-<body>
 
  <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
