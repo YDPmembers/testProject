@@ -19,5 +19,14 @@ public class MemberService {
 		return memberMapper.memberList();
 	}
 	
+	public int memberRegister(MemberVO memberVO) {
+		
+		int retVal = memberMapper.memberRegister(memberVO);
+		System.out.println("확인 + retVal" + retVal);
+		
+		return retVal;
+	}
+	
+	
 
 }

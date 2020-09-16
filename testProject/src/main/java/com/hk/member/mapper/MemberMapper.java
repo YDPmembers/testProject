@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+
 import com.hk.member.vo.MemberVO;
 
 
@@ -12,5 +13,7 @@ import com.hk.member.vo.MemberVO;
 public interface MemberMapper {
 	
 	public List<MemberVO> memberList();
+	
+	public int memberRegister(MemberVO memeberVO);
 
 }
