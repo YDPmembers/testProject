@@ -35,7 +35,6 @@
                     <tr>
                       <th>#번호</th>
                       <th>이름</th>
-                      <th>패스워드</th>
                       <th>이메일</th>
                       <th>작성일</th>
                       <th>수정일</th>
@@ -48,7 +47,6 @@
                     <tr>
                       <td><c:out value="${member.mno }" /></td>
                       <td><c:out value="${member.mname }" /></td>
-                      <td><c:out value="${member.pwd }" /></td>
                       <td><c:out value="${member.email }" /></td>
                       <td><fmt:formatDate pattern="yyyy-MM-dd" value="${member.cre_date }" /></td>
                       <td><fmt:formatDate pattern="yyyy-MM-dd" value="${member.mod_date }" /></td>
