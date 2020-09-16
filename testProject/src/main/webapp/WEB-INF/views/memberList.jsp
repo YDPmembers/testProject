@@ -12,6 +12,8 @@
 <body>
 	<h1>회원 목록</h1>
 	
+	<a href="register">회원 가입</a><br />
+	
 	<c:forEach items="${members}" var="member">
 		${member.mno}, 
 		${member.mname}, 
