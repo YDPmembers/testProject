@@ -27,10 +27,10 @@
  if (loginMember != null) {%>
    <span style="float: right;"> 
    ${loginMember.mname } 
-   <a style="color: white;" href="/auth/logout">로그아웃</a>
+   <a style="color: black;" href="/auth/logout">로그아웃</a>
    </span>
    <% } else {%>
-   <span style="float: right;"> <a style="color: white;"
+   <span style="float: right;"> <a style="color: balck;"
       href="/auth/login">로그인</a>
    </span>
    <% } %>
