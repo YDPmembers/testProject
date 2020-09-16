@@ -13,7 +13,7 @@ insert into study.members (mno,email,pwd,mname,cre_date,mod_date)
 	values (member_seq.nextval, #{email},#{pwd},#{mname}, sysdate,sysdate)
 </insert>
 
-<select id="memberGetOne" resultType="com.hk.member.dto.Member">
+<select id="memberGetOne" resultType="com.hk.member.vo.MemberVO">
 
 select * from members where mno = #{mno}
 </select>
