@@ -33,7 +33,7 @@ public class MemberController {
 	}
 	
 	@GetMapping("/member/register")
-	public String memberRegister(MemberVO member) {
+	public String memberRegister(MemberVO memberVO) {
 		return "memberRegister";
 	}
 	
