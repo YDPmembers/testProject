@@ -29,7 +29,7 @@ UPDATE members SET email=#{email}, MNAME=#{mname},PWD=#{pwd} ,MOD_DATE =SYSDATE 
 </delete>
 
 <select id="memberLogin" resultType="com.hk.member.vo.MemberVO">
-	select*from members where email=#{email}, and pwd=#{pwd}
+	select*from members where email=#{email} and pwd=#{pwd}
 </select>
 
 
