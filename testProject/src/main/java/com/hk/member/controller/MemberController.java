@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.hk.member.service.MemberService;
 import com.hk.member.vo.MemberVO;
@@ -50,4 +51,34 @@ public class MemberController {
 		}
 				
 	}
+	
+	@GetMapping("/member/update")
+	public String memberUpdate(@RequestParam("mno")int mno, Model model) {
+		model.addAttribute("member",memberService.memberGetOne(mno));
+		return "memberUpdate";
+		
+	}
+	
+	@PostMapping("/member/update")
+	public String memberUpdateDone(MemberVO memberVO, Model model) {
+		memberService.memberUpdate(memberVO);
+		model.addAttribute("member",memberVO);
+		return "memberUpdateDone";
+		
+	}
+	
+	@GetMapping("/member/delete")
+	public String memberDelete(@RequestParam("mno")int mno, Model model) {
+		model.addAttribute("mno", mno);
+		return "memberDelete";
+		
+	}
+	
+	@PostMapping("/member/delete")
+	public String memberDeleteDone(@RequestParam("mno")int mno, Model model) {
+		memberService.memberDelete(mno);
+		return "memberDeleteDone";
+		
+	}
+	
 }
