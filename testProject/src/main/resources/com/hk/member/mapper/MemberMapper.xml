@@ -20,7 +20,7 @@ select * from members where mno = #{mno}
 
 <update id="memberUpdate">
 
-UPDATE members SET email=#{EMAIL}, MNAME=#{MNAME},PWD=#{PWD} ,MOD_DATE =SYSDATE  WHERE  mno=#{MNO}
+UPDATE members SET email=#{email}, MNAME=#{mname},PWD=#{pwd} ,MOD_DATE =SYSDATE  WHERE  mno=#{mno}
 
 </update>
 
