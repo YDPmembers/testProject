@@ -2,7 +2,7 @@
     pageEncoding="UTF-8" %> 
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> 
     
-<jsp:include page="./include/header.jsp">
+<jsp:include page="./include/header.jsp" />
 
 	<h1>회원 정보 수정</h1>
 	
@@ -21,4 +21,4 @@
 	<a href="list">회원 목록으로 돌아가기</a><br />
 	<a href="delete?mno=${member.mno}">회원 삭제하기</a>
 
-<jsp:include page="./include/header.jsp">
+<jsp:include page="./include/header.jsp" />
