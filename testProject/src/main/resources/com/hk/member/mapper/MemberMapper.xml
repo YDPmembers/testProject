@@ -28,4 +28,10 @@ UPDATE members SET email=#{email}, MNAME=#{mname},PWD=#{pwd} ,MOD_DATE =SYSDATE 
 	delete members where mno=#{mno}
 </delete>
 
+<select id="memberLogin" resultType="com.hk.member.vo.MemberVO">
+	select*from members where email=#{email}, and pwd=#{pwd}
+</select>
+
+
+
 </mapper>

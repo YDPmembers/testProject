@@ -44,5 +44,9 @@ public class MemberService {
 		return retVal;
 	}
 	
+	public MemberVO memberLogin(MemberVO memberVO) {
+		
+		return memberMapper.memberLogin(memberVO);
+	}
 
 }
