@@ -5,8 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hk.member.mapper.MemberMapper;
 import com.hk.member.vo.MemberVO;
+import com.hk.member.mapper.MemberMapper;
+
 
 @Service
 public class MemberService {
@@ -47,6 +48,12 @@ public class MemberService {
 	public MemberVO memberLogin(MemberVO memberVO) {
 		
 		return memberMapper.memberLogin(memberVO);
+	}
+	
+	public MemberVO checkIdDup(String email) {
+		
+		return memberMapper.checkIdDup(email);
+		
 	}
 
 }

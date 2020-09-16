@@ -32,6 +32,8 @@ UPDATE members SET email=#{email}, MNAME=#{mname},PWD=#{pwd} ,MOD_DATE =SYSDATE 
 	select*from members where email=#{email} and pwd=#{pwd}
 </select>
 
-
+<select id="chckIdDup" resultType="com.hk.member.vo.MemberVO">
+select * from members where email=#{email}
+</select>
 
 </mapper>
