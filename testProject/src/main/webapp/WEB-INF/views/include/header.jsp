@@ -23,7 +23,7 @@
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 <div>
  <%
- MemberVO loginMember = new MemberVO();
+ MemberVO loginMember = (MemberVO) session.getAttribute("loginMember");
  if (loginMember != null) {%>
    <span style="float: right;"> 
    ${loginMember.mname } 
