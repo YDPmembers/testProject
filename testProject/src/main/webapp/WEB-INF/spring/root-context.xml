@@ -11,7 +11,7 @@
 			value="oracle.jdbc.OracleDriver"></property>
 		<property name="jdbcUrl"
 			value="jdbc:oracle:thin:@localhost:1521:XE"></property>
-
+<!--  -->
 <!-- 		<property name="driverClassName" -->
 <!-- 		value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property> -->
 <!-- 		<property name="jdbcUrl" -->
