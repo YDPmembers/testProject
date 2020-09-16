@@ -9,7 +9,7 @@
 		이메일 : <input type="email" name="email"><br />
 		암호 : <input type="password" name="pwd"><br />
 		<input type="submit" value="로그인"> 
-		<input type="reset" value="취소">
-		
+		<input type="reset" value="취소"><br />
+		<a href='/member/list'>list로 가기</a>
 </form>
 <jsp:include page="../include/footer.jsp" />
