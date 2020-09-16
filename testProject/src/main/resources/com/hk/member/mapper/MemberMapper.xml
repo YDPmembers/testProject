@@ -13,4 +13,19 @@ insert into study.members (mno,email,pwd,mname,cre_date,mod_date)
 	values (member_seq.nextval, #{email},#{pwd},#{mname}, sysdate,sysdate)
 </insert>
 
+<select id="memberGetOne" resultType="com.hk.member.dto.Member">
+
+select * from members where mno = #{mno}
+</select>
+
+<update id="memberUpdate">
+
+UPDATE members SET email=#{EMAIL}, MNAME=#{MNAME},PWD=#{PWD} ,MOD_DATE =SYSDATE  WHERE  mno=#{MNO}
+
+</update>
+
+<delete id="memberDelete">
+	delete members where mno=#{mno}
+</delete>
+
 </mapper>

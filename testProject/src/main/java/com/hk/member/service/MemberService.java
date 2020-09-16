@@ -27,6 +27,22 @@ public class MemberService {
 		return retVal;
 	}
 	
+	public MemberVO memberGetOne(int mno) {
+		
+		return memberMapper.memberGetOne(mno);
+	}
+	
+	public int memberUpdate(MemberVO memberVO) {
+		
+		int retVal = memberMapper.memberUpdate(memberVO);
+	return retVal;
+	
+	}
+	
+	public int memberDelete(int mno) {
+			int retVal = memberMapper.memberDelete(mno);
+		return retVal;
+	}
 	
 
 }
