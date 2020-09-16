@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
         
-          <h1>회원 목록 입니당.</h1>
+          <h1>회원 목록 입니당!</h1>
           <p class="lead mb-5">GS멤버스 신규 
             <a href="register">회원 가입</a>!</p>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">GS회원 목록 바로 가기</a>
