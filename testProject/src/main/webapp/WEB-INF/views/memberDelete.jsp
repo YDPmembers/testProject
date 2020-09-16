@@ -10,7 +10,7 @@
 	<h1>회원 삭제</h1>
 	
 	<form action="delete" method="post">
-		<input type="hidden" name="mno" value="${member.mno}">
+		<input type="hidden" name="mno" value="${mno}">
 		정말 삭제하시겠습니까?<br />
 		<input type="submit" value="삭제하기">
 	</form>
